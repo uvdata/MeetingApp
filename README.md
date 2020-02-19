@@ -8,6 +8,7 @@
 	* C# / .NET Core
 	* Docker (Der skal laves en Docker fil som kan bygge og køre projektet) 
 * Du skal lave en Docker Compose fil som kan starte projektet. Den skal bygge Docker imaget for applikationen og linke det til en instans af databasen hvorefter applikationen skal startes op og være klar til brug. En bonus vil være også at inkluderer et eller andet UI værktøj til at browse databasens indhold i docker compose filen. I så fald vil kommandoen docker-compose up starte alle afhængighederne for din applikation, så du kan demonstrere den.
+* Det er mere vigtigt at du viser noget fedt med C#/.NET end at du demonstrerer at du kan anvende Visual Studio til at auto generere Razor views, data access logik el.lign.
 * Vær kreativ - gode idéer er velkomne.
 
 ## Aflevering
