@@ -1,0 +1,10 @@
+﻿@model int
+@{
+    ViewData["Title"] = "View";
+}
+<form asp-action="DeleteMeetingRoom">
+
+    <input type="hidden" value="@Model" name="id" />
+    <button type="submit">Delete</button>
+</form>
+<a asp-controller="MeetingRoom" asp-action="Index">Go to meeting rooms</a>

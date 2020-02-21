@@ -1,0 +1,20 @@
+version: '3.4'
+
+services:
+  meetingapp.website:
+    image: ${DOCKER_REGISTRY-}meetingappwebsite
+    build:
+      context: .
+      dockerfile: MeetingApp.Website/Dockerfile
+    ports:
+      - "8080:80"
+  db:
+    image: microsoft/mssql-server-linux
+    container_name: db-server
+    environment:
+      - ACCEPT_EULA=Y
+      - MSSQL_SA_PASSWORD=Your_password123
+      - MSSQL_TCP_PORT=1433
+
+    ports:
+      - "1400:1433"

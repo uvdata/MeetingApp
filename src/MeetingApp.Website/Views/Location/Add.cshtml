@@ -1,0 +1,12 @@
+﻿@model MeetingApp.Website.Models.Location.AddLocationViewModel
+@{
+    ViewData["Title"] = "View";
+}
+    <form asp-action="Add">
+        <div class="form-group">
+            <label asp-for="Location.Name" class="control-label"></label>
+            <input asp-for="Location.Name" class="form-control" />
+            <span asp-validation-for="Location.Name" class="text-danger"></span>
+        </div>
+        <button type="submit">Submit</button>
+    </form>

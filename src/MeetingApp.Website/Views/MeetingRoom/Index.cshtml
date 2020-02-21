@@ -1,0 +1,29 @@
+﻿@model MeetingApp.Website.Models.MeetingRoom.ListMeetingRoomViewModel
+@{
+    ViewData["Title"] = "View";
+}
+<ul>
+    @foreach (var meetingRoom in Model.MeetingRooms)
+    {
+        <li>
+            @meetingRoom.Name
+            <ul>
+                <li>
+                    Location : @meetingRoom.Location.Name
+                </li>
+                <li>
+                    Seats : @meetingRoom.Seats
+                </li>
+                <li>
+                    <a href="~/meetingroom/update?id=@meetingRoom.Id">Update</a>
+                </li>
+                <li>
+                    <a href="~/meetingroom/delete?id=@meetingRoom.Id">Delete</a>
+                </li>
+            </ul>
+        </li>
+    }
+</ul>
+<a asp-controller="MeetingRoom" asp-action="Add">Add new meeting room</a>
+<br />
+<a asp-controller="Location" asp-action="Index">Go to locations</a>

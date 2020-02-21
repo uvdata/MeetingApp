@@ -1,0 +1,30 @@
+﻿@model MeetingApp.Website.Models.MeetingRoom.UpdateMeetingRoomViewModel
+@{
+    ViewData["Title"] = "View";
+}
+<form asp-action="Update">
+    <div class="form-group">
+        <label asp-for="MeetingRoom.Name" class="control-label"></label>
+        <input asp-for="MeetingRoom.Name" class="form-control" />
+        <span asp-validation-for="MeetingRoom.Name" class="text-danger"></span>
+    </div>
+
+    <div class="form-group">
+        <label asp-for="MeetingRoom.Seats" class="control-label"></label>
+        <input asp-for="MeetingRoom.Seats" class="form-control" />
+        <span asp-validation-for="MeetingRoom.Seats" class="text-danger"></span>
+    </div>
+
+    <div class="form-group">
+        <p>Currently selected location : @Model.MeetingRoom.Location.Name</p>
+        <select name="LocationId">
+            <option value="">--Please choose an option--</option>
+            @foreach (var location in Model.LocationModels)
+            {
+                <option value="@location.Id">@location.Name</option>
+            }
+        </select>
+    </div>
+    <input asp-for="MeetingRoom.Id" type="hidden" />
+    <button type="submit">Submit</button>
+</form>

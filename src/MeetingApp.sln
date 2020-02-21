@@ -1,0 +1,55 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29806.167
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MeetingApp.Website", "MeetingApp.Website\MeetingApp.Website.csproj", "{29771757-364B-4ABD-9629-015278B33ECB}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MeetingApp.Database", "MeetingApp.Database\MeetingApp.Database.csproj", "{6FB5D050-126F-476F-966C-F58D08418BE1}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MeetingApp.Models", "MeetingApp.Models\MeetingApp.Models.csproj", "{009E5632-6306-4428-B0A6-8F667D856B37}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MeetingApp.Domain", "MeetingApp.Domain\MeetingApp.Domain.csproj", "{549723E8-30FE-4270-872B-07613624F90A}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MeetingApp.Application", "MeetingApp.Application\MeetingApp.Application.csproj", "{628C5C6A-12F1-4233-B37E-C20206F9BC30}"
+EndProject
+Project("{E53339B2-1760-4266-BCC7-CA923CBCF16C}") = "docker-compose", "docker-compose.dcproj", "{B2651B69-821D-4D10-ADFD-2BDBB4F1F37C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{29771757-364B-4ABD-9629-015278B33ECB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{29771757-364B-4ABD-9629-015278B33ECB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{29771757-364B-4ABD-9629-015278B33ECB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{29771757-364B-4ABD-9629-015278B33ECB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6FB5D050-126F-476F-966C-F58D08418BE1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6FB5D050-126F-476F-966C-F58D08418BE1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6FB5D050-126F-476F-966C-F58D08418BE1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6FB5D050-126F-476F-966C-F58D08418BE1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{009E5632-6306-4428-B0A6-8F667D856B37}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{009E5632-6306-4428-B0A6-8F667D856B37}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{009E5632-6306-4428-B0A6-8F667D856B37}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{009E5632-6306-4428-B0A6-8F667D856B37}.Release|Any CPU.Build.0 = Release|Any CPU
+		{549723E8-30FE-4270-872B-07613624F90A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{549723E8-30FE-4270-872B-07613624F90A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{549723E8-30FE-4270-872B-07613624F90A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{549723E8-30FE-4270-872B-07613624F90A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{628C5C6A-12F1-4233-B37E-C20206F9BC30}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{628C5C6A-12F1-4233-B37E-C20206F9BC30}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{628C5C6A-12F1-4233-B37E-C20206F9BC30}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{628C5C6A-12F1-4233-B37E-C20206F9BC30}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B2651B69-821D-4D10-ADFD-2BDBB4F1F37C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B2651B69-821D-4D10-ADFD-2BDBB4F1F37C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B2651B69-821D-4D10-ADFD-2BDBB4F1F37C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B2651B69-821D-4D10-ADFD-2BDBB4F1F37C}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {6BA371A7-4995-4FE5-97D2-A9AD57F47C2E}
+	EndGlobalSection
+EndGlobal
