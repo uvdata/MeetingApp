@@ -23,8 +23,8 @@ namespace aspreact
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-            //var connectionString = Environment.GetEnvironmentVariable("DB_CONNECTION_STRING");
-            var connectionString = "host=localhost;port=8181;database=meeting_rooms;username=aspnetreact;password=aGlyZSBtZQ==";
+            var connectionString = Environment.GetEnvironmentVariable("DB_CONNECTION_STRING");
+            //var connectionString = "host=localhost;port=8181;database=meeting_rooms;username=aspnetreact;password=aGlyZSBtZQ==";
             services.AddDbContext<ApiDbContext>(options =>
                 options.UseNpgsql(connectionString, o => o.UseNetTopologySuite())
             );
