@@ -4,4 +4,4 @@ Requires docker to be installed.
 
 1. `docker-compose build`
 2. `docker-compose up`
-3. https://localhost:5001/
+3. https://localhost:8000/

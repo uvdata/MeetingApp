@@ -107,10 +107,10 @@ class MeetingRoomModel extends Component{
                     {/* <Col><Form.Control value={this.state.location} placeholder="Location" onChange={this.handleChange} /></Col> */}
                     <Col>
                         <Map ref={this.mapRef} center={{lat: 51.505, lng: -0.09}} zoom={5} style={{width:"100%", height: "600px"}} onclick={this.handleMapClick} >
-                        {/* <TileLayer
+                        <TileLayer
                         attribution='&amp;copy <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
                         url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
-                        /> */}
+                        />
                         {marker != null ? marker: ''}
                         </Map>
                     </Col>
@@ -461,10 +461,10 @@ class MeetingRoomComponent extends Component{
                 <AddMeetingRoom updateData={this.updateData}></AddMeetingRoom>
                 
                 <Map ref={this.mapRef} center={position} zoom={this.state.zoom} style={{width:"100%", height: "600px"}}  >
-                    {/* <TileLayer
+                    <TileLayer
                     attribution='&amp;copy <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
                     url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
-                    /> */}
+                    />
                     <FeatureGroup ref={this.layerGroupRef} onlayeradd={this.fitToCustomLayer}>
                         {this.state.meetingRooms ? MarkerGroup(): ''}
                     </FeatureGroup>

@@ -19,7 +19,8 @@ services:
         # https://github.com/kartoza/docker-postgis/blob/develop/docker-compose.yml
         image: kartoza/postgis:12.0
         ports:
-            - "8181:5432"
+            #- "8181:5432"
+            - "5432"
         restart: always
         volumes:
             - db_volume:/var/lib/postgresql/data
