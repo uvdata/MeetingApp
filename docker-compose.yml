@@ -1,0 +1,35 @@
+version: "3"
+
+networks:
+    react-kmd:
+      driver: bridge
+
+services:
+     web:
+         build: .
+         ports:
+             - "8000:80"
+         depends_on:
+             - postgis_image
+         environment:
+             DB_CONNECTION_STRING: "host=postgis_image;port=5432;database=meeting_rooms;username=aspnetreact;password=aGlyZSBtZQ=="
+         networks:
+             - react-kmd  
+     postgis_image:
+        # https://github.com/kartoza/docker-postgis/blob/develop/docker-compose.yml
+        image: kartoza/postgis:12.0
+        ports:
+            #- "8181:5432"
+            - "5432"
+        restart: always
+        volumes:
+            - db_volume:/var/lib/postgresql/data
+            - ./dbscripts/seed.sql :/docker-entrypoint-initdb.d/seed.sql
+        environment:
+            POSTGRES_USER: "aspnetreact"
+            POSTGRES_PASSWORD: "aGlyZSBtZQ=="
+            POSTGRES_DB: "meeting_rooms"
+        networks:
+            - react-kmd
+volumes:
+    db_volume:
